@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Dry Oar – White Water Rafting</title>
+<style>
+  /* keep it basic & a little clunky on purpose */
+  body { margin:0; font-family: Georgia, serif; color:#111; }
+  a { color:#0a58ca; text-decoration:none; }
+  a:hover { text-decoration:underline; }
+
+  .wrap { width:980px; margin:0 auto; }
+
+  /* header */
+  header { padding:20px 0 6px; }
+  .brand { display:flex; align-items:center; gap:16px; }
+  .logo { width:150px; height:auto; }
+  nav { margin:6px 0 12px; font-size:14px; }
+  nav a { margin-right:10px; }
+
+  /* hero */
+  .hero img { width:980px; height:420px; object-fit:cover; display:block; }
+
+  /* section blocks */
+  h2 { margin:18px 0 4px; font-size:18px; }
+  small { color:#444; }
+  .section { position:relative; margin:8px 0 28px; }
+  .section img.main { width:420px; height:300px; object-fit:cover; border:1px solid #bbb; }
+  .section .icon {
+    position:absolute; left:380px; bottom:6px;
+    width:48px; height:48px; opacity:.7;
+  }
+
+  /* big scenic panel + text */
+  .panel { margin:26px 0; }
+  .panel img { width:980px; height:340px; object-fit:cover; display:block; }
+  .panel h3 { margin:12px 0 6px; font-size:18px; }
+  .panel p { margin:0 0 8px; font-size:14px; line-height:1.35; }
+  .panel a.btn { display:inline-block; margin-top:4px; }
+
+  /* footer */
+  footer { margin:18px 0 40px; }
+  .foot-links a { display:block; margin:6px 0; }
+  .copy { font-size:14px; margin:10px 0; }
+  .social { display:flex; gap:8px; margin-top:6px; }
+  .box {
+    width:28px; height:28px; background:#e9eef4; border:1px solid #b9c7d6;
+    display:grid; place-items:center; font-size:14px; font-weight:bold; color:#406185;
+  }
+  /* keep it narrow on phones without being “fancy” */
+  @media (max-width:1020px){
+    .wrap { width:92%; }
+    .hero img, .panel img { width:100%; }
+  }
+</style>
+</head>
+<body>
+
+  <div class="wrap">
+    <!-- Header -->
+    <header>
+      <div class="brand">
+        <!-- very simple “logo I made” (inline SVG) -->
+        <svg class="logo" viewBox="0 0 200 80" aria-label="Dry Oar logo">
+          <rect x="0" y="0" width="200" height="80" fill="#dfeaf3"/>
+          <g transform="translate(18,6)">
+            <path d="M40 0 L52 8 L52 44 L40 52 L28 44 L28 8 Z" fill="#3a87b8"/>
+            <rect x="37" y="10" width="6" height="18" fill="#fde68a"/>
+            <path d="M0,58 C20,50 32,64 52,56 C72,48 84,62 104,54 C124,46 136,60 156,52" fill="none" stroke="#3a87b8" stroke-width="4"/>
+          </g>
+          <text x="110" y="56" font-size="28" font-family="Georgia, serif" fill="#2a5678" text-anchor="middle">DRY</text>
+          <text x="160" y="56" font-size="28" font-family="Georgia, serif" fill="#2a5678" text-anchor="middle">OAR</text>
+        </svg>
+      </div>
+
+      <nav>
+        <a href="#">Home</a>
+        <a href="#">Rivers</a>
+        <a href="#">Rates/Dates</a>
+        <a href="#">Contact Us</a>
+      </nav>
+    </header>
+
+    <!-- Hero -->
+    <div class="hero">
+      <img src="https://images.unsplash.com/photo-1532614338840-ab30cf10ed36?q=80&w=1600&auto=format&fit=crop" alt="Raft charging through rapids">
+    </div>
+
+    <!-- Top tagline like screenshot -->
+    <h2>Have An Adventure</h2>
+    <small>Make Memories with Dry Oar</small>
+    <div style="margin:6px 0 10px;"><a href="#">Book Now</a></div>
+
+    <!-- Three small sections with icons -->
+    <div class="section">
+      <img class="main" src="https://images.unsplash.com/photo-1506929562872-bb421503ef21?q=80&w=1200&auto=format&fit=crop" alt="River scene">
+      <!-- tree/river icon -->
+      <svg class="icon" viewBox="0 0 64 64">
+        <path d="M18 44 L32 12 L46 44 Z" fill="#88907f"/>
+        <ellipse cx="40" cy="48" rx="14" ry="6" fill="#9aa391"/>
+        <circle cx="16" cy="51" r="6" fill="#9aa391"/>
+      </svg>
+      <div style="margin-top:8px;"><strong>Rivers</strong></div>
+    </div>
+
+    <div class="section">
+      <img class="main" src="https://images.unsplash.com/photo-1504280390368-3971f6601ee0?q=80&w=1200&auto=format&fit=crop" alt="Camping in mountains">
+      <!-- campfire icon -->
+      <svg class="icon" viewBox="0 0 64 64">
+        <path d="M32 18 C26 28 36 30 32 40 C42 34 38 28 32 18 Z" fill="#88907f"/>
+        <rect x="18" y="44" width="28" height="6" rx="3" fill="#88907f"/>
+      </svg>
+      <div style="margin-top:8px;"><strong>Camping</strong></div>
+    </div>
+
+    <div class="section">
+      <img class="main" src="https://images.unsplash.com/photo-1504215680853-026ed2a45def?q=80&w=1200&auto=format&fit=crop" alt="Rapids action">
+      <!-- crossed paddles icon -->
+      <svg class="icon" viewBox="0 0 64 64">
+        <path d="M18 50 L30 38" stroke="#88907f" stroke-width="5"/>
+        <path d="M34 50 L22 38" stroke="#88907f" stroke-width="5"/>
+        <rect x="12" y="48" width="10" height="6" fill="#88907f"/>
+        <rect x="30" y="48" width="10" height="6" fill="#88907f"/>
+      </svg>
+      <div style="margin-top:8px;"><strong>Rapids</strong></div>
+    </div>
+
+    <!-- Big scenic panel + blurb -->
+    <div class="panel">
+      <img src="https://images.unsplash.com/photo-1482192505345-5655af888cc4?q=80&w=1600&auto=format&fit=crop" alt="Wide valley and river">
+      <h3>More Than Just The Thrill</h3>
+      <p>
+        Enjoy the breathtaking scenery. From valleys, meadows, canyons, and high peaks; it’s way more than just the rapids.
+        It’s a great way to get away from it all and relax amongst all the beauty of the great outdoors.
+      </p>
+      <a class="btn" href="#">Join Us</a>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+      <div class="copy">Dry Oar © 2025</div>
+      <div class="foot-links">
+        <a href="#">Site Plan</a>
+        <a href="#">Contact Us</a>
+      </div>
+      <div class="social">
+        <div class="box" title="Facebook">f</div>
+        <div class="box" title="Twitter">t</div>
+        <div class="box" title="Instagram">ig</div>
+      </div>
+    </footer>
+  </div>
+</body>
+</html>
